@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf"/>
+  <remote fetch="ssh://git@git.kaiostech.com/external-apps/" name="external-apps"/>
+  <remote fetch="ssh://git@git.kaiostech.com/feature-phone-apps/" name="feature-phone"/>
+  <remote fetch="ssh://git@git.kaiostech.com/itriad/" name="itriad"/>
+  <remote fetch="ssh://git@git.kaiostech.com/KaiOS/" name="kaios"/>
+  <remote fetch="https://github.com/nxpgonk/" name="nxp"/>
+  <remote fetch="ssh://git@git.kaiostech.com/qct/" name="qct"/>
+  <remote fetch="ssh://git@git.kaiostech.com/KaiOS/" name="yarn-mirror"/>
+  
+  <default remote="caf" revision="LF.BR.1.2.8" sync-j="4"/>
+  
+  <project groups="kai" name="ads-sdk" path="services/ads-sdk" remote="kaios" revision="175dccd29f19c452d19566e8942d6f67b0b8c680" upstream="master"/>
+  <project groups="app" name="antitheft" path="apps/antitheft" remote="feature-phone" revision="470e7c102f65e950fff490ab2f7f5e715a53169e" upstream="master"/>
+  <project groups="kai" name="api-daemon" path="services/api-daemon" remote="kaios" revision="d6491fdec3d137347a53a6f45a8c05983e0b03bb" upstream="master"/>
+  <project groups="kai" name="apitrace" path="external/apitrace" remote="kaios" revision="d4bf220581782f74dd75b281ddc4d2d7955cd75c" upstream="master"/>
+  <project groups="app" name="bluetooth" path="apps/bluetooth" remote="feature-phone" revision="687340cc0be10bd5a43f6ffab73a0acace25e7f4" upstream="master"/>
+  <project groups="app" name="calculator" path="apps/calculator" remote="feature-phone" revision="beb2903f9db3fc940a12ea88bd1060b8e24689b5" upstream="master"/>
+  <project groups="app" name="calendar" path="apps/calendar" remote="feature-phone" revision="3a5224168a85ee3e3f7a2985b0d8ccb5b3f03f69" upstream="master"/>
+  <project groups="app" name="calllog" path="apps/calllog" remote="feature-phone" revision="b936752e6c72e5850ab9f71d0707436a3901331c" upstream="master"/>
+  <project groups="app" name="callrecording" path="apps/callrecording" remote="feature-phone" revision="f86d80c07426448ebe46463406353f0943eb6914" upstream="master"/>
+  <project groups="app" name="callscreen" path="apps/callscreen" remote="feature-phone" revision="05bf845774f7c5ea42a29e56fc09fe898c97906a" upstream="master"/>
+  <project groups="app" name="camera" path="apps/camera" remote="feature-phone" revision="2dfc2f4d1e69eb11a8db9e48608bb4b797a9eb6a" upstream="master"/>
+  <project groups="app" name="clock" path="apps/clock" remote="feature-phone" revision="52fddabfa03590b9c0ac4548c05bfacf1c220113" upstream="master"/>
+  <project groups="app" name="communications" path="apps/communications" remote="feature-phone" revision="47870239fb1118ebc0c247f4589211b65d9f2433" upstream="master"/>
+  <project groups="app" name="contact" path="apps/contact" remote="feature-phone" revision="0991ece230b8d784baeb1852d585cfc3af5cfda4" upstream="master"/>
+  <project groups="app" name="default_theme" path="apps/default_theme" remote="feature-phone" revision="3b7d8348a42f19c98eb549edf13f829b67d6940c" upstream="master"/>
+  <project groups="kai" name="device-qcom-common" path="device/qcom/common" remote="kaios" revision="ed5b8c2cac97a2038fa3c0f2c5d8940f3c1b6981" upstream="quoin-LF.BR.1.2.8">
+    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <project name="device/common" revision="59222307bea10506e1f4814bf6687fb4cdcddabe" upstream="LF.BR.1.2.8"/>
+  <project name="device/generic/goldfish" revision="e4881ef18ef3adc7d76485d96029f9259bdc7150" upstream="LF.BR.1.2.8"/>
+  <project name="device/qcom/sepolicy" revision="d0cd39714b446c5b130b6db32221cf445e8bc2f8" upstream="LF.BR.1.2.8"/>
+  <project groups="app" name="download" path="apps/download" remote="feature-phone" revision="aae8fa8eeb958f651cb302d97aab76660a4ea584" upstream="master"/>
+  <project groups="app" name="email" path="apps/email" remote="feature-phone" revision="3e9e1ce778cc9f4433e76e131061a663d315a733" upstream="master"/>
+  <project groups="app" name="emergency-call" path="apps/emergency-call" remote="feature-phone" revision="d9ab8e7c3cb3b552f960f9c035b82b3885a8a36b" upstream="master"/>
+  <project groups="ext" name="facebook" path="apps/facebook" remote="external-apps" revision="538ba580c9f05c6f8b9a57a8a05a7688b3fdcfb9" upstream="master"/>
+  <project groups="kai" name="fake-libdvm" path="dalvik" remote="kaios" revision="d50ae982b19f42f0b66d08b9eb306be81687869f" upstream="master"/>
+  <project groups="app" name="filemanager" path="apps/filemanager" remote="feature-phone" revision="a98566aff1093b03fb3a729f71869d736dd62912" upstream="master"/>
+  <project groups="app" name="fm" path="apps/fm" remote="feature-phone" revision="d58ca1bd2c329d9cc7dce9e89dc3b18a520f21e8" upstream="master"/>
+  <project groups="app" name="fota" path="apps/fota" remote="feature-phone" revision="4a9aeaa6356d844d6b338b54f3d2cc828e58ac64" upstream="master"/>
+  <project groups="app" name="ftu" path="apps/ftu" remote="feature-phone" revision="22b4c4dddaccf013ce7da2f2f0dcd8cbad7a797c" upstream="master"/>
+  <project groups="kai" name="gaia" remote="kaios" revision="128bb92f53785a2af2c0a2cc49b8270fe311d60a" upstream="master"/>
+  <project groups="app" name="gallery" path="apps/gallery" remote="feature-phone" revision="abe82b2c45da02c37a4007829e315cc265decdbd" upstream="master"/>
+  <project groups="kai" name="gecko48" path="gecko" remote="kaios" revision="0595b8e154231f74de58acf550f781a9cf1f8d6e" upstream="master"/>
+  <project groups="app" name="geoloc" path="apps/geoloc" remote="itriad" revision="f3138d52c1238416f9053e6ff9c6e65f27d6ed81" upstream="master"/>
+  <project groups="kai" name="gonk-misc" remote="kaios" revision="42f8e107ca9380d9f5873159d5905dc1f2027d77" upstream="master"/>
+  <project groups="ext" name="googleassistant" path="apps/googleassistant" remote="external-apps" revision="bc79b3b6d61bc3004923aeb2f449f6bec85120a5" upstream="master"/>
+  <project groups="ext" name="googlemaps" path="apps/googlemaps" remote="external-apps" revision="d96dd8128bc5e305b0866f631dadbc85330b210d" upstream="master"/>
+  <project groups="ext" name="googlesearch" path="apps/googlesearch" remote="external-apps" revision="3b6f311bd0c08a44b3c49a1907b1b8f4f7b2f150" upstream="master"/>
+  <project groups="app" name="kaios-pay.kaiostech.com" path="apps/kaios-pay.kaiostech.com" remote="feature-phone" revision="c9e5927e8bea178e8a3622b4d996bf7e8851429b" upstream="master"/>
+  <project groups="app" name="kaios-plus.kaiostech.com" path="apps/kaios-plus.kaiostech.com" remote="feature-phone" revision="721ab25ccf3c5665a648a6b8e01b35d5a56f4ce0" upstream="master"/>
+  <project name="kernel/lk" path="bootable/bootloader/lk" revision="d64e50490713f63b4978c927feeadde8e1146904" upstream="LF.BR.1.2.8"/>
+  <project name="kernel/msm-3.10" path="kernel" revision="9dfa73eb7739dd636dce925ecddca06f01db9e13" upstream="LF.BR.1.2.8"/>
+  <project groups="app" name="keyboard" path="apps/keyboard" remote="feature-phone" revision="40f13070f527c46e4ae7adca76d30dd1835d5cf4" upstream="master"/>
+  <project groups="app" name="keypad" path="apps/keypad" remote="feature-phone" revision="ca2d83f83e8c7e256faaf3753dc5e262c692245b" upstream="master"/>
+  <project groups="kai" name="koost" path="gecko/koost" remote="kaios" revision="6b811e24cf928a93c8e95210ee15ee3740b94636" upstream="master"/>
+  <project groups="app" name="launcher" path="apps/launcher" remote="feature-phone" revision="3628bd400995fb78ad6ab1bc63c1f5a3626ab6ce" upstream="master"/>
+  <project name="libese-jcop-kit" path="external/libese-jcop-kit" remote="nxp" revision="7f5dfca9fb805fc788f7a22f8e69243ce399efaf" upstream="refs/tags/NFC_NCIx_KRC0.2.10.0"/>
+  <project name="libnfc-mifare" path="external/libnfc-mifare" remote="nxp" revision="5c5fa420afa18d6a562a3f1b58af5f340b8c8895" upstream="refs/tags/NFC_NCIx_KRC0.2.10.0"/>
+  <project name="libnfc-nci" path="external/libnfc-nci" remote="nxp" revision="95cd6fa5dc53d827da53e6884da05406643e427a" upstream="refs/tags/NFC_NCIx_KRC0.2.10.0"/>
+  <project groups="kai" name="librecovery" remote="kaios" revision="4508fe02c522ee7fec93571db3b11b6ad432266a" upstream="master"/>
+  <project groups="kai" name="menuconfig" path="external/menuconfig" remote="kaios" revision="f202c096d0636d22abc7f74bfa225cd36af0d680" upstream="master"/>
+  <project groups="kai" name="mmitest" path="apps/mmitest" remote="feature-phone" revision="96b7d01c8c69313e3be648d72ab98fec76f0aa77" upstream="master"/>
+  <project groups="kai" name="moztt" path="external/moztt" remote="kaios" revision="46c437060281bef447dd9c9843959ae1b7d77ad2" upstream="master"/>
+  <project groups="app" name="music" path="apps/music" remote="feature-phone" revision="944414191dd35e9669d7b0dc3b5f5d0477aeaae6" upstream="master"/>
+  <project groups="app" name="network-alerts" path="apps/network-alerts" remote="feature-phone" revision="110f18f47f62658c7d3986e77277e9b306780e00" upstream="master"/>
+  <project groups="app" name="nfc-privileged-api-tests" path="apps/nfc-privileged-api-tests" remote="feature-phone" revision="061a33e4b07fcbc640da2b1331ca4fe89b59c35b" upstream="master"/>
+  <project name="nfc-test" path="system/mmitest/nfc_test" remote="nxp" revision="f69c2cb74bfb5bff6f99876b16fce66eb5560290" upstream="master"/>
+  <project groups="app" name="notes" path="apps/notes" remote="feature-phone" revision="1a3d82e92e5c0e59788134cfdd6cd78cac28f9ed" upstream="master"/>
+  <project groups="app" name="operatorvariant" path="apps/operatorvariant" remote="feature-phone" revision="75c35a134559fc47358d08f4334e6215634ce02a" upstream="master"/>
+  <project name="platform/abi/cpp" path="abi/cpp" revision="36b381298a4efb7c293d394d8b1acbda68230989" upstream="LF.BR.1.2.8"/>
+  <project name="platform/bionic" path="bionic" revision="a0fc10289e7a835a7355538e31a5155ac366ed9b" upstream="LF.BR.1.2.8"/>
+  <project name="platform/bootable/recovery" path="bootable/recovery" revision="3134db80c8a496586fadc49687304f30bf182cb8" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/aac" path="external/aac" revision="fa60e72adaa9c3c14a376a6dde1ac8eb4e657242" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/android-clat" path="external/android-clat" revision="7a4162af0d7bac06ef59066200a004bb13e3e703" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/bison" path="external/bison" revision="c2418b886165add7f5a31fc5609f0ce2d004a90e" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/boringssl" path="external/boringssl" revision="bcfe7e04c1126ed755ec68467012a0f8683ba58e" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/bsdiff" path="external/bsdiff" revision="9d4448afbbbe00353ea05f3be091535885e2e155" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/bzip2" path="external/bzip2" revision="707c3f0f5be01253da553f1449a476bd15240c2e" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/c-ares" path="external/c-ares" revision="76437db506b2c6dade1d3b8f9464d33b8885496b" upstream="LF.BR.1.2.9"/>
+  <project name="platform/external/cblas" path="external/cblas" revision="0ab3e6274f109964d912c83ecd6abe6a3bf926c6" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/clang" path="external/clang" revision="6270ca65199882c73aa9699d8fbeb580870e8d30" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/compiler-rt" path="external/compiler-rt" revision="fac9cf04de37e07f307faef7cd322cad4e208bcd" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/curl" path="external/curl" revision="db13356363572ccacd82b7316bc8146b19483703" upstream="LF.BR.1.2.9"/>
+  <project name="platform/external/dhcpcd" path="external/dhcpcd" revision="4898d9d5a6e801c76bb5e2cdc47ab2df446bdec2" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/dnsmasq" path="external/dnsmasq" revision="5dcb07bcc6c9b8b7ed4cadb89057b8a80a271c68" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="b4b2895a994631ace609b61e1e1acadea3af79fd" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/eigen" path="external/eigen" revision="1ba7f856248f3d72a4549722b6c80dd6fde4abf5" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/elfutils" path="external/elfutils" revision="a963009a0b9d502ffe81e79c7c3b45b3cf58b044" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/expat" path="external/expat" revision="60be6d7bfea91721ea5241df94275a783618bdff" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="3686eecd8c8511ae7ecd7611a2f065b48b484b13" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/fdlibm" path="external/fdlibm" revision="a80590655471025cfdbbd1328afc3ae5e6feab6a" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/flac" path="external/flac" revision="38b9175d0e423399b34792af7a822901f19bc39c" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/freetype" path="external/freetype" revision="acefa13d0bc9c156d73c5a9c55d9efa3e16993b3" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/giflib" path="external/giflib" revision="31d8b20e9f689123533d3e48aa801d6f2bfb62fb" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/gptfdisk" path="external/gptfdisk" revision="f82c7d8f9734e9f3d7e2eedec300106c5e3618c2" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/gtest" path="external/gtest" revision="e826aa4f99cf7d9e57fe9668e299a2808674ede4" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="84cf81e6dcf4a816e91d457a79fb028b7296b86f" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/icu" path="external/icu" revision="2d896efcc2d48cf85c77f07751b3e1f918d419b3" upstream="aosp-new/icu56"/>
+  <project name="platform/external/iproute2" path="external/iproute2" revision="0b5eaaa97b9f807c89d518b8a6b3e02a27b34e1f" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="be69e0250002f998173bedb124c56b68ab6292cd" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/iptables" path="external/iptables" revision="8ce72d51b7f4ee34933e66c794c8c4933923a21d" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/jemalloc" path="external/jemalloc" revision="486fa41f4ace88a9d1b96831bc36cbd2cfa4957e" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/jhead" path="external/jhead" revision="1eaaa029bae4ced3438b5aeae4af7036d93cffd9" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/jpeg" path="external/jpeg" revision="9f3436c3b153b55257caca0345c8135514b26945" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/jsmn" path="external/jsmn" revision="27b5a35db0630b86791fa037a12da7b37c2aab49" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/jsoncpp" path="external/jsoncpp" revision="bc9a1127157bc00c01a1e106e98e7cd24c41f780" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libavc" path="external/libavc" revision="82d4a9285e8be6ac79b02c93562197afee5cb1ff" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libcxx" path="external/libcxx" revision="076df933eb2d98152218b874abfa91cba660bcbd" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libcxxabi" path="external/libcxxabi" revision="b451069aab57ccfe64c0fc7a18cfc487862fe985" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libdrm" path="external/libdrm" revision="551ed507e2cd3235eb134b28fef41115ed33077f" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libgsm" path="external/libgsm" revision="1e26679795597459732408891bedea130b3ee1f1" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/liblzf" path="external/liblzf" revision="6946aa575b0949d045722794850896099d937cbb" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libnl" path="external/libnl" revision="4080feb04bb3c45b02edc58224e83ae17fc5dbe3" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libogg" path="external/libogg" revision="e4375ffe5491c4742bec47ae5468a9df5ffc3528" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libopus" path="external/libopus" revision="0c71140db3d1904a4bc6c70875c3c00dd50adf60" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libpcap" path="external/libpcap" revision="c442bf68e06f961ad0f8fc5a7d19e0984985ea30" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libpng" path="external/libpng" revision="9754d36aab223fa0072fa606b6414fa43792fc31" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libselinux" path="external/libselinux" revision="943ed44a46ed95d557bf552b57fe61280a77489c" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libunwind" path="external/libunwind" revision="1078b361f260491816c09a88ec41651a4bc4111d" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libvpx" path="external/libvpx" revision="e09df5088abba578d3f42146c33df9b2d1357776" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/libxml2" path="external/libxml2" revision="49666f60dc11cc85a27df0db1fc054fdaf5c3acf" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/llvm" path="external/llvm" revision="7df0ddb9601b900d99f37ca9fd61aa7c374c0993" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="6e91f2fa98745ac8faee6d26d529ccf44216a8ca" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/mksh" path="external/mksh" revision="c87de5d0279a299eec916effc751961347ff5eeb" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/nanopb-c" path="external/nanopb-c" revision="7e7f2e9122af6c7e7e7d4ba205fdf46d50b95eef" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/netcat" path="external/netcat" revision="b023a43765b15f0b0fd5b52b7d8021f515c59c23" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/pcre" path="external/pcre" revision="0d3d4875d4e672ab52cfd421da9a7fddbbaecda3" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/protobuf" path="external/protobuf" revision="2f4d8a1b744e2e62dcd68b7cb7159000e5751975" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/safe-iop" path="external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/scrypt" path="external/scrypt" revision="72691396f9fa84fd39cb72d031750e580e648aa3" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/selinux" path="external/selinux" revision="c3b220252ea64bbe168307c102c4da616e4cf63d" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/sepolicy" path="external/sepolicy" revision="3bc7e1edfe1d94eb5f57c0cf37dd3e436f26348b" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/sfntly" path="external/sfntly" revision="bb71bd7763b9a588af9b7dcf40cb279a084803ac" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/skia" path="external/skia" revision="e15fe53c0305a847a9ef4c9dc3b25f1967c6475d" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/sonic" path="external/sonic" revision="10c16fc60582d7e8bcf7533793871485d339e241" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/sonivox" path="external/sonivox" revision="5eed1ed4dd894fc984f383b89cfe6dd54be77f3b" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/speex" path="external/speex" revision="ff03110e77ec7fe716c5be11783746f59c814e30" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/sqlite" path="external/sqlite" revision="2fb3da9fbbc58c78b92c00f6e5fea77f37c57faa" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/squashfs-tools" path="external/squashfs-tools" revision="1a710ff698178fbf71251395c4c96e3e7e73e2ed" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/strace" path="external/strace" revision="54e2f93285e52a4347ace1f33860ce51e72853eb" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/svox" path="external/svox" revision="7498f9aafbafa48960689439f0cd69da0c1ab34f" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/tcpdump" path="external/tcpdump" revision="b5d6f230d44e96d2ac9cbd7f6bb2862fa88a60c4" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/tinyalsa" path="external/tinyalsa" revision="b5d1d535372a7e8c69f2d073ec7ecc434ab7109e" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/tinycompress" path="external/tinycompress" revision="aeb849a2957229f99bb7868ff65bcfeece0e9d54" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/tinyxml" path="external/tinyxml" revision="143125ff631c481d590cae0d7cc9ccfaaca269c7" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/tinyxml2" path="external/tinyxml2" revision="9d9aed466bbe37c993de79de71b6afbf091f99af" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/toybox" path="external/toybox" revision="c96e42498c99b179444e6812dd8b0583f0624fcd" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/tremolo" path="external/tremolo" revision="9a7955a75f1e1ceea774cd10d6b8f9b01cbfdacc" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/webp" path="external/webp" revision="9e80ee991168a0a6c2a906dd2c17c5e17df4566e" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/webrtc" path="external/webrtc" revision="c8deb4e7ba3190a0876236d77c19426eb6f54e4f" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="f27eb767ffc9ac043dda3b5c9b0b4c2bf4a14833" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/yaffs2" path="external/yaffs2" revision="ddef8a05204eae5a9fe409f11652cb8c6bcd48fa" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/zlib" path="external/zlib" revision="a15adad27b1a33de2f4c788809ba97cff726cf58" upstream="LF.BR.1.2.8"/>
+  <project name="platform/external/zopfli" path="external/zopfli" revision="bb96afe13a50bfc17259dcf56f44e997923c705c" upstream="LF.BR.1.2.8"/>
+  <project name="platform/frameworks/av" path="frameworks/av" revision="c0f50e50a8899c12ad44f9295b262a4aaa7e28fc" upstream="LF.BR.1.2.8"/>
+  <project name="platform/frameworks/base" path="frameworks/base" revision="e93d25ebe99b2384fe84429496379cf1f388ebfc" upstream="LF.BR.1.2.8"/>
+  <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="b7f05114e5f408479b50647837cdf25187bfd164" upstream="LF.BR.1.2.8"/>
+  <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="8c10afdc806cbb9d4560e90b100f0dcefdd46a21" upstream="LF.BR.1.2.8"/>
+  <project name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="99ea89ee558c3917383468febeef186df2e6a76c" upstream="LF.BR.1.2.8"/>
+  <project name="platform/frameworks/native" path="frameworks/native" revision="e7a6e837b0de9dd69203f0f50fbadc7e2e21dd17" upstream="LF.BR.1.2.8"/>
+  <project name="platform/frameworks/rs" path="frameworks/rs" revision="e4aaed83b7836b346f76e98cb8eb2b28a8db4fdd" upstream="LF.BR.1.2.8"/>
+  <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="b9ab122e27b98dec015942a3cad0aaad73bc1504" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/libhardware" path="hardware/libhardware" revision="f7a0e433f6cdd241678fea9e41a3248b1cc12cdf" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="c91951354b9ca839060349faa20fc82c8792b233" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="922c773a0b96847b7ca2b45aa61f021e374f874b" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="2a304f2362a41017dfe91255d221186182436a81" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="b63fa0ada278afa971057d33304fdc539d062a7b" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="01aec717751e69965614e11c060a50b61ace2743" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="4686d504bbe572a0061e85a9c08388e15811eb6c" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster" revision="3c67d8ee56a92c64f3fe8a3779a937d6b5e164df" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="8d1774c7630ad0c3c063f586341137534f365d0d" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors" revision="dc7ff7179011b9a902b68d04f32d92e63bab0f45" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="54e03249409e2b42311c4e8cc7a7722fe15b2073" upstream="LF.BR.1.2.8"/>
+  <project name="platform/hardware/ril" path="hardware/ril" revision="e44f1d8e62a9bc48dbea3b352b3b21e6416bf86c" upstream="LF.BR.1.2.8"/>
+  <project name="platform/libnativehelper" path="libnativehelper" revision="b7a25286026b49f0f7d95b25f2d32c4f47f498ef" upstream="LF.BR.1.2.8"/>
+  <project name="platform/ndk" path="ndk" revision="e6403c6a048bdec5a7fc7c6c0cc149fc5f098f80" upstream="LF.BR.1.2.8"/>
+  <project groups="pdk,darwin" name="platform/prebuilts/clang/darwin-x86/host/3.6" path="prebuilts/clang/darwin-x86/host/3.6" revision="3c60fb5744ce4fbde988fbc24e38a8d9e5a58e59" upstream="LF.BR.1.2.8"/>
+  <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/host/3.6" path="prebuilts/clang/linux-x86/host/3.6" revision="648ca1ae83fc794d8c8fab318ca5cd8b88b4c608" upstream="LF.BR.1.2.8"/>
+  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" revision="3344adbe898ae092b7bcc7c1f69d89980e39cbf2" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" revision="6d08ca9f45ff685648fd13c75bf5cac4b11c19bb" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" revision="7a80f8db4e0bd43e2ef53515cdb8f117cc65e9e0" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/gcc/darwin-x86/host/headers" path="prebuilts/gcc/darwin-x86/host/headers" revision="4ac4f7cc41cf3c9e36fc3d6cf37fd1cfa9587a68" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" revision="8834958755acc291d126ba7ee38ac731d04f9c9e" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="4b341df712969ca2ac0c3cf6294260d406b9d9be" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="a0cb3720e4047bade36f8cfac84ea94715313a89" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="63b209feac0b045f5fc68810fd2e65bf1ca51e2f" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="f61a459478cdc31e8aae22a182cdbf814ba08012" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="f691cae2f256d5f72388c0ce9113007a53ad333a" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/misc" path="prebuilts/misc" revision="a7ac7a3a3d2363b3d8d7bf90dfbc3e02a9db406b" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="ed603f9b7893442321e50d96bf226c27da1c279a" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5" revision="0b1ee9ec23565fd52a6f20d996a16977d0fa7ead" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="f63d822b31f41bc1be234ad64a7f09de9221444f" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="b90c7bfb4b6be17888242492eb04b96e47c5dc59" upstream="LF.BR.1.2.8"/>
+  <project name="platform/prebuilts/tools" path="prebuilts/tools" revision="f32d460e38a2354a060d2e918836bd745ec49f55" upstream="LF.BR.1.2.8"/>
+  <project name="platform/system/bt" path="system/bt" revision="d78be64ba2d0a670645b2adcc4648d9300a230ac" upstream="LF.BR.1.2.8"/>
+  <project name="platform/system/core" path="system/core" revision="b1bbb5d6881d09f9b63cb632f42c566fa460b9d8" upstream="LF.BR.1.2.8"/>
+  <project name="platform/system/extras" path="system/extras" revision="7a371b88364dd45252bf1244ed961547da5d6f64" upstream="LF.BR.1.2.8"/>
+  <project name="platform/system/gatekeeper" path="system/gatekeeper" revision="e547f93b0089f12c78d33b83e5f49fdb0e0c85bc" upstream="LF.BR.1.2.8"/>
+  <project name="platform/system/keymaster" path="system/keymaster" revision="042f5f412001094bfcea673e1db12e558e43bdce" upstream="LF.BR.1.2.8"/>
+  <project name="platform/system/media" path="system/media" revision="01d1b4335cceaf3eb3ab5929ff23fc013d1b7146" upstream="LF.BR.1.2.8"/>
+  <project name="platform/system/netd" path="system/netd" revision="7dd0862367f787ca676709293ecc77f123e271d3" upstream="LF.BR.1.2.8"/>
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" revision="1e2073ebaf987cfcca09c52ac50f8335728b1480" upstream="LF.BR.1.2.8"/>
+  <project name="platform/system/security" path="system/security" revision="9fd88c4ae5eea5dc3a16d2a7b468d24641d8bcbf" upstream="LF.BR.1.2.8"/>
+  <project name="platform/system/vold" path="system/vold" revision="75faf303b655b8c990cf5b29ea5b85ddae535951" upstream="LF.BR.1.2.8"/>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="21e5e4454102134ee837827edbf6a390da0fd7ef" upstream="LF.BR.1.2.8"/>
+  <project name="platform/vendor/qcom-opensource/display-frameworks" path="vendor/qcom/opensource/display-frameworks" revision="ff2c56a3832e41024eef9da4e070f68ff2ff7318" upstream="LF.BR.1.2.8"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="5e622f0d1d19c71fa7b458e48074299728ed28f0" upstream="LF.BR.1.2.8"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="6efa6a5100fb0401a02f4df40b98c495a240ce33" upstream="LF.BR.1.2.8"/>
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="b3c9084989fe5010440612821d31c26d3e7ba0ec" upstream="LF.BR.1.2.8"/>
+  <project name="platform/vendor/qcom/ferrum" path="device/qcom/msm8909" revision="b89b725d181076362646b832813d43c381ea9da6" upstream="LF.BR.1.2.8"/>
+  <project groups="kai" name="platform_build" path="build" remote="kaios" revision="d82369a00dd446478a60bd498fcc99926bfd1144" upstream="quoin-LF.BR.1.2.8">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
+  <project groups="kai" name="platform_external_libkika" path="external/libkika" remote="kaios" revision="b293d8f2a279057f5521e5701280ba327b00ed7a" upstream="master"/>
+  <project groups="kai" name="platform_external_radvd" path="external/radvd" remote="kaios" revision="6dd7a7ea009d415084c7f0e44d154ff6bc798b61" upstream="master"/>
+  <project groups="kai" name="platform_hardware_libhardware_moz" path="hardware/libhardware_moz" remote="kaios" revision="ce8ca45ee262afc21a88da2e5afb6f417def2ea1" upstream="master"/>
+  <project groups="kai" name="platform_system_bluetoothd" path="system/bluetoothd" remote="kaios" revision="7e023bec32d1501fe8996268f0543a10ec78c69b" upstream="master"/>
+  <project groups="kai" name="platform_system_libfdio" path="system/libfdio" remote="kaios" revision="34adfb400e031f3dd3353d92413572db5e3a7376" upstream="master"/>
+  <project groups="kai" name="platform_system_libpdu" path="system/libpdu" remote="kaios" revision="f1a61fa8f97cc0a1ac4eca160acc222981b21d90" upstream="master"/>
+  <project groups="kai" name="platform_system_mmitest" path="system/mmitest" remote="kaios" revision="9f99ea31b75075753406f5ffcc668f34c254cdc5" upstream="quoin"/>
+  <project groups="kai" name="platform_system_nfcd" path="system/nfcd" remote="kaios" revision="e566f1c9d9f7e42aff2528a65a112f5e3ab5c0c4" upstream="refs/tags/NFC_NCIx_KRC0.2.10.0"/>
+  <project groups="kai" name="platform_vendor_qcom_ferrum_512" path="device/qcom/msm8909_512" remote="kaios" revision="0e5f19650a692cbb01127a108199656f00e7edc0" upstream="quoin-LF.BR.1.2.8"/>
+  <project groups="kai" name="proprietary" path="gecko/proprietary" remote="kaios" revision="7e57579a8472bf2bb53a9ccf0317178105ff73eb" upstream="master"/>
+  <project groups="kai" name="rilproxy" remote="kaios" revision="fa528514584d330a47b3e51c3ca6f99605fa6386" upstream="master"/>
+  <project groups="app" name="ringtones" path="apps/ringtones" remote="feature-phone" revision="87054578e6bc029629453142716d3493e6744dfe" upstream="master"/>
+  <project groups="kai" name="rust-toolchain" path="prebuilts/rust" remote="kaios" revision="4aa1e93b053f340c6079194d08a7c20f3c7b5a0f" upstream="master"/>
+  <project groups="app" name="se-api-test-app" path="apps/se-api-test-app" remote="feature-phone" revision="eb16720e3547291d6c4a7c6a38600b014b1ca3d4" upstream="master"/>
+  <project groups="app" name="search" path="apps/search" remote="feature-phone" revision="eb7e71425b24971fb75abaf9b316dcde6013270c" upstream="master"/>
+  <project groups="app" name="settings" path="apps/settings" remote="feature-phone" revision="06aaf61e7b35d2a97ac783bcd84190d3ba0555f4" upstream="master"/>
+  <project groups="app" name="sms" path="apps/sms" remote="feature-phone" revision="29cd8c0daafd38074bb5bd30048ef65d7b2aac09" upstream="master"/>
+  <project groups="app" name="soundrecorder" path="apps/soundrecorder" remote="feature-phone" revision="d102dc97fb68592282b3abfdf948cf740b280cde" upstream="master"/>
+  <project groups="app" name="stk" path="apps/stk" remote="feature-phone" revision="cbf7b80fdb635ba3745ec6e3a1bac39580baf013" upstream="master"/>
+  <project groups="app" name="system" path="apps/system" remote="feature-phone" revision="bc695c77738403d2ab444de057ae3e8638d4cfc9" upstream="master"/>
+  <project groups="ext" name="twitter" path="apps/twitter" remote="external-apps" revision="c468b53e5cf6fd812ef5769cc3df6bddc7c8da2f" upstream="master"/>
+  <project groups="app" name="unitconverter" path="apps/unitconverter" remote="feature-phone" revision="2b60f3795e7ff91bc1a621836767219527e88707" upstream="master"/>
+  <project groups="kai" name="valgrind" path="external/valgrind" remote="kaios" revision="5f931350fbc87c3df9db8b0ceb37734b8b471593" upstream="master"/>
+  <project groups="kai" name="vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="qct" revision="e2754e26265ae25a42dc7c4c74b24079e144e86c" upstream="quoin-LF.BR.1.2.8.DB"/>
+  <project groups="kai" name="vex" path="external/VEX" remote="kaios" revision="48d8c7c950745f1b166b42125e6f0d3293d71636" upstream="master"/>
+  <project groups="app" name="video" path="apps/video" remote="feature-phone" revision="00fbbc4073b557dc02354f52f62ed08ce12b8fb8" upstream="master"/>
+  <project groups="app" name="wallpaper" path="apps/wallpaper" remote="feature-phone" revision="d61a08c635614832ec51c9079fb31823d6eb85d8" upstream="master"/>
+  <project groups="app" name="wappush" path="apps/wappush" remote="feature-phone" revision="5412579ce0e799cb620cdf66a34deae4bb1a32ce" upstream="master"/>
+  <project groups="kai" name="yarn-mirror" path=".yarn_mirror" remote="yarn-mirror" revision="a5a2d4272e9fc76b5b85258298aba640ac348bd2" upstream="master"/>
+  <project groups="ext" name="youtube" path="apps/youtube" remote="external-apps" revision="9f4c8cb4bd640d51edbf8ea821c493ffbbe98eb1" upstream="master"/>
+</manifest>
